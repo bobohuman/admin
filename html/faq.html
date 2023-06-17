@@ -78,7 +78,7 @@
           <ul class="menu-inner py-1">
             
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">首頁</div>
@@ -94,7 +94,7 @@
                 <div data-i18n="Typography">個人資料異動</div>
               </a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="faq.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">回報問題</div>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <div data-i18n="Typography">首頁</div>
+              <div data-i18n="Typography">回報問題</div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <!-- User -->
@@ -219,6 +219,30 @@
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <h5 class="card-header">回報問題</h5>
+                      <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                              <label class="form-label" for="basic-default-message">問題描述</label>
+                              <textarea
+                                rows="5" 
+                                id="basic-default-message"
+                                class="form-control"
+                                placeholder="請在此描述你遇到的問題"
+                              ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">傳送</button>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <!-- Content wrapper -->
         </div>

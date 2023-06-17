@@ -78,7 +78,7 @@
           <ul class="menu-inner py-1">
             
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">首頁</div>
@@ -104,7 +104,7 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">身分管理</span>
             </li>
-            <li class="menu-item">
+            <li class="menu-item ">
               <a href="student.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">學生資料維護</div>
@@ -129,7 +129,7 @@
               </a>
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="question.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">題目資料維護</div>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <div data-i18n="Typography">首頁</div>
+              <div data-i18n="Typography">題目資料維護</div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <!-- User -->
@@ -219,6 +219,94 @@
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class=" btn btn-danger"  style="color:white;" href="classCreate.html">新增</a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card">
+                        <h5 class="card-header">題目資料檢視</h5>
+                        <div class="table-responsive text-nowrap">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>題目</th>
+                                <th>科目</th>
+                                <th>出題者</th>
+                                <th>動作</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-border-bottom-0">
+                              <tr>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>請問729可以被幾個整數整除</strong></td>
+                                <td>數學</td>
+                                <td>admin</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                      <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="studentAdd.html"
+                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
+                                      >
+                                      <a class="dropdown-item" href="javascript:void(0);"
+                                        ><i class="bx bx-trash me-1"></i> 刪除</a
+                                      >
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>請問以下哪個不是李白的作品</strong></td>
+                                <td>國文</td>
+                                <td>admin</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                      <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="studentAdd.html"
+                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
+                                      >
+                                      <a class="dropdown-item" href="javascript:void(0);"
+                                        ><i class="bx bx-trash me-1"></i> 刪除</a
+                                      >
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>(填空) this is an [].</strong></td>
+                                <td>英文</td>
+                                <td>admin</td>
+                                <td>
+                                  <div class="dropdown">
+                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                      <i class="bx bx-dots-vertical-rounded"></i>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="studentAdd.html"
+                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
+                                      >
+                                      <a class="dropdown-item" href="javascript:void(0);"
+                                        ><i class="bx bx-trash me-1"></i>刪除</a
+                                      >
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!--/ Basic Bootstrap Table -->
+                  </div>
+                </div>
+              </div>
           </div>
           <!-- Content wrapper -->
         </div>

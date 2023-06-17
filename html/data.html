@@ -78,7 +78,7 @@
           <ul class="menu-inner py-1">
             
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">首頁</div>
@@ -88,7 +88,7 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">系統設定</span>
             </li>
-            <li class="menu-item">
+            <li class="menu-item  active">
               <a href="data.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">個人資料異動</div>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <div data-i18n="Typography">首頁</div>
+              <div data-i18n="Typography">個人資料異動</div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <!-- User -->
@@ -219,6 +219,106 @@
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card mb-4">
+                      <h5 class="card-header">個人資料</h5>
+                      <!-- Account -->
+                      <hr class="my-0" />
+                      <div class="card-body">
+                        <form id="formAccountSettings" method="POST" onsubmit="return false">
+                          <div class="row">
+                            <div class="mb-3 col-md-6">
+                              <label for="firstName" class="form-label">姓名</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                value="測試帳號"
+                                autofocus
+                              />
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="email" class="form-label">信箱</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                id="email"
+                                name="email"
+                                value="test@example.com"
+                                placeholder="test@example.com"
+                              />
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label class="form-label" for="phoneNumber">電話號碼</label>
+                              <div class="input-group input-group-merge">
+                                <span class="input-group-text">(+886)</span>
+                                <input
+                                  type="text"
+                                  id="phoneNumber"
+                                  name="phoneNumber"
+                                  class="form-control"
+                                  value="09123456789"
+                                  placeholder="09123456789"
+                                />
+                              </div>
+                            </div>
+                            <div class="mb-3 col-md-6">
+                              <label for="address" class="form-label">地址</label>
+                              <input type="text" class="form-control" id="address" name="地址" value="台中市西屯區逢甲路123號" placeholder="Address" />
+                            </div>
+                          <div class="mt-2">
+                            <button type="submit" class="btn btn-primary me-2">儲存變更</button>
+                          </div>
+                        </form>
+                      </div>
+                      <!-- /Account -->
+                    </div>
+                    <div class="card">
+                      <h5 class="card-header">修改密碼</h5>
+                      <div class="card-body">
+                        <div class="mb-3 col-12 mb-0">
+                          <div class="alert alert-warning">
+                            <h6 class="alert-heading fw-bold mb-1">修改密碼提示</h6>
+                            <p class="mb-0">密需要8位數以上英數字混合</p>
+                          </div>
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label class="form-label" for="password">密碼</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                type="password"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                value="123456"
+                                class="form-control"
+                              />
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-12">
+                            <label class="form-label" for="password">確定密碼</label>
+                            <div class="input-group input-group-merge">
+                              <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                value="123456"
+                                class="form-control"
+                              />
+                            </div>
+                        </div>
+                        <form id="formAccountDeactivation" onsubmit="return false">
+
+                          <button type="submit" class="btn btn-danger deactivate-account">確定修改密碼</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <!-- Content wrapper -->
         </div>

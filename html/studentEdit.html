@@ -78,7 +78,7 @@
           <ul class="menu-inner py-1">
             
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="index.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">首頁</div>
@@ -104,7 +104,7 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">身分管理</span>
             </li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="student.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">學生資料維護</div>
@@ -172,7 +172,7 @@
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-              <div data-i18n="Typography">首頁</div>
+              <div data-i18n="Typography">學生資料維護</div>
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
                 <!-- User -->
@@ -219,6 +219,60 @@
 
           <!-- Content wrapper -->
           <div class="content-wrapper">
+            <div class="container-xxl flex-grow-1 container-p-y">
+
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="btn btn-primary"  style="color:white;" href="student.html">回上頁</a>
+                    <a class=" btn btn-success"  style="color:white;" href="#">儲存</a>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-xxl">
+                        <div class="card mb-4">
+                          <h5 class="card-header">學生資料維護</h5>
+                          <div class="card-body">
+                            <form>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-phone">帳號</label>
+                                    <div class="col-sm-10">
+                                      <input
+                                        type="text"
+                                        readonly="readonly"
+                                        id="basic-default-phone"
+                                        class="form-control phone-mask"
+                                        value="testAcount001"
+                                        aria-describedby="basic-default-phone"
+                                      />
+                                    </div>
+                                  </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-name">姓名</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="basic-default-name" value="李大頭" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-email">信箱</label>
+                                    <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <input
+                                        type="text"
+                                        id="basic-default-email"
+                                        class="form-control"
+                                        value="D01@gmail.com"
+                                        aria-describedby="basic-default-email2"
+                                        />
+                                    </div>
+                                    </div>
+                                </div>
+                              
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <!-- Content wrapper -->
         </div>
