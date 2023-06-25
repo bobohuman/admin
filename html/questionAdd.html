@@ -104,7 +104,7 @@
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">身分管理</span>
             </li>
-            <li class="menu-item ">
+            <li class="menu-item">
               <a href="student.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-dock-top"></i>
                 <div data-i18n="Typography">學生資料維護</div>
@@ -220,93 +220,95 @@
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <div class="container-xxl flex-grow-1 container-p-y">
-
                 <div class="row">
-                  <div class="col-md-2">
-                    <a class=" btn btn-danger"  style="color:white;" href="questionAdd.html">新增</a>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="card">
-                        <h5 class="card-header">題目資料檢視</h5>
-                        <div class="table-responsive text-nowrap">
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th>題目</th>
-                                <th>科目</th>
-                                <th>出題者</th>
-                                <th>動作</th>
-                              </tr>
-                            </thead>
-                            <tbody class="table-border-bottom-0">
-                              <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>請問729可以被幾個整數整除</strong></td>
-                                <td>數學</td>
-                                <td>admin</td>
-                                <td>
-                                  <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                      <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="questionEdit.html"
-                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
-                                      >
-                                      <a class="dropdown-item" href="javascript:void(0);"
-                                        ><i class="bx bx-trash me-1"></i> 刪除</a
-                                      >
-                                    </div>
+                    <div class="col-md-2">
+                      <a class="btn btn-primary"  style="color:white;" href="question.html">回上頁</a>
+                      <a class=" btn btn-success"  style="color:white;" href="#">儲存</a>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="col-xxl">
+                          <div class="card mb-4">
+                            <h5 class="card-header">題目資料新增</h5>
+                            <div class="card-body">
+                              <form>
+                                  <div class="row mb-3">
+                                      <label class="col-sm-2 col-form-label" for="basic-default-phone">題目名稱</label>
+                                      <div class="col-sm-10">
+                                        <input
+                                          type="text"
+                                          id="basic-default-phone"
+                                          class="form-control phone-mask"
+                                          aria-describedby="basic-default-phone"
+                                        />
+                                      </div>
                                   </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>請問以下哪個不是李白的作品</strong></td>
-                                <td>國文</td>
-                                <td>admin</td>
-                                <td>
-                                  <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                      <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="questionEdit.html"
-                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
-                                      >
-                                      <a class="dropdown-item" href="javascript:void(0);"
-                                        ><i class="bx bx-trash me-1"></i> 刪除</a
-                                      >
+                                  <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-phone">選項A</label>
+                                    <div class="col-sm-10">
+                                      <input
+                                        type="text"
+                                        id="basic-default-phone"
+                                        class="form-control phone-mask"
+                                        aria-describedby="basic-default-phone"
+                                      />
                                     </div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>(填空) this is an [].</strong></td>
-                                <td>英文</td>
-                                <td>admin</td>
-                                <td>
-                                  <div class="dropdown">
-                                    <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                      <i class="bx bx-dots-vertical-rounded"></i>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="questionEdit.html"
-                                        ><i class="bx bx-edit-alt me-1"></i>編輯</a
-                                      >
-                                      <a class="dropdown-item" href="javascript:void(0);"
-                                        ><i class="bx bx-trash me-1"></i>刪除</a
-                                      >
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-phone">選項B</label>
+                                    <div class="col-sm-10">
+                                      <input
+                                        type="text"
+                                        id="basic-default-phone"
+                                        class="form-control phone-mask"
+                                        aria-describedby="basic-default-phone"
+                                      />
                                     </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-phone">選項C</label>
+                                    <div class="col-sm-10">
+                                      <input
+                                        type="text"
+                                        id="basic-default-phone"
+                                        class="form-control phone-mask"
+                                        aria-describedby="basic-default-phone"
+                                      />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label" for="basic-default-phone">選項D</label>
+                                    <div class="col-sm-10">
+                                      <input
+                                        type="text"
+                                        id="basic-default-phone"
+                                        class="form-control phone-mask"
+                                        aria-describedby="basic-default-phone"
+                                      />
+                                    </div>
+                                </div>
+                                  <div class="row mb-3">
+                                      <label class="col-sm-2 col-form-label" for="basic-default-name">答案</label>
+                                      <div class="col-sm-10">
+                                      <select class="form-control" id="basic-default-name" >
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                        <option value="D">D</option>
+                                      </select>
+                                      </div>
                                   </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                                  <div class="row mb-3">
+                                    <label class="form-label" for="basic-default-message">解析</label>
+                                    <textarea rows="5" id="basic-default-message" class="form-control" placeholder="解析"></textarea>
+                                  </div>
+                              </form>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <!--/ Basic Bootstrap Table -->
+                    </div>
                   </div>
-                </div>
-              </div>
+                
+              
           </div>
           <!-- Content wrapper -->
         </div>
